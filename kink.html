@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  
+  <title>Kink.js</title>
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="kink.js"></script>
+</head>
+<body>
+  <p>Nothing to see here...</p>
+  <p>Use the console to try out Kink.</p>
+  <script>
+    key = jQuery.fn.on.bind (jQuery (document), 'keypress')
+    kinky = function (/* ... */) {
+      return key (kink.apply (null, arguments))
+    }
+  </script>
+</body>
+</html>
